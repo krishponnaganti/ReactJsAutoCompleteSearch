@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 export default function App(props) {
   const [inputTxt, handleChange] = useState("");
   const [filteredCountries, handleCountry] = useState([]);
-
   //console.log(regex);
   useEffect(() => {
     let regex = new RegExp("^" + inputTxt + ".*", "g");
